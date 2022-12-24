@@ -6,7 +6,7 @@
 
 response=$(curl https://cicd-pippinnie.fly.dev/health)
 
-if [ "$response" = "ok" ]; then
+if [[ "$response" == "ok" ]]; then
     exit 0
 else
     exit 1
