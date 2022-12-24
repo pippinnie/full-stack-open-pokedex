@@ -22,6 +22,7 @@ ENV NODE_ENV production
 COPY . .
 
 RUN chmod +x health_check.sh
+RUN apt-get update; apt install -y curl
 RUN npm install --production=false && npm run build
 FROM debian:bullseye
 
