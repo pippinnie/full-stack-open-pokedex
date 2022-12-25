@@ -45,6 +45,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
+      - name: Success noti
         uses: rjstone/discord-webhook-notify@v1
         if: success()
         with:
