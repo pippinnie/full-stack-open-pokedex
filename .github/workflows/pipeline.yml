@@ -50,6 +50,7 @@ jobs:
         if: success()
         with:
             severity: info
-            details: A new version of Pokedex deployed
+            description: to https://cicd-pippinnie.fly.dev/ by ${{ github.actor }}
+            text: A new version of Pokedex deployed
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
